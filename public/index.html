@@ -1,0 +1,242 @@
+<head>
+  <link rel="stylesheet" href="style.css">
+</head>
+<link href='https://fonts.googleapis.com/css?family=Marvel' rel='stylesheet'>
+
+<header>
+  <IMG class="gif" SRC="imgs/ironman-gif.gif">
+  <h1 class="site-title">The MARVEL-ous Journey</h1>
+
+  <p class="member-names">
+    <strong>Team Members</strong>: Aayushi Modi; Anirudh Suresh; Riya Baheti; Abheek Chakrabarti
+  </p>
+</header>
+
+<div class="side-bar">
+  <nav class="navigation">
+    <ul>
+      <li>
+        <IMG SRC="imgs/space-stone.png" style="width: 25px; float: left; margin-right: 5px;">
+        <a href="#intro">Intro</a>
+        <IMG SRC="imgs/time-stone.png" style="width: 25px; float: left; margin-right: 5px;">
+        <a href="#superhero-attributes">Superhero Attributes</a>
+        <IMG SRC="imgs/reality-stone.png" style="width: 25px; float: left; margin-right: 5px;">
+        <a href="#physical-features">Physical Features</a>
+        <IMG SRC="imgs/power-stone.png" style="width: 25px; float: left; margin-right: 5px;">
+        <a href="#death-statistics">Death Statistics</a>
+        <IMG SRC="imgs/mind-stone.png" style="width: 25px; float: left; margin-right: 5px;">
+        <a href="#good-vs-evil">Good vs. Evil</a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<div class="main-content">
+  <section id="intro">
+    <div id="intro">
+      <div id="question">What does it take to be in Marvel?</div>
+      <hr>
+      <div id="intro-text">
+      It is the dream of many to be a superhero, specifically a Marvel superhero. So what does it take to be a part of Marvel? In this web page, we will answer this question by taking a deep dive into Marvel characters and specifically analyze the Avengers, the stars of Marvel, by investigating the various attributes, features, and strengths that make up a Marvel superhero. We hope to provide a thorough level of insight and inspiration for superfans that have dreamed of becoming their favorite Avenger and/or those who want to understand the behind-the-scenes analytics. Using data from numerous marvel characters, we explore and connect different characters' relationships, patterns, and similarities in four specific categories:
+
+          <ul id="sections-list">
+            <li>Superhero Attributes</li>
+            <li>Physical Features</li>
+            <li>Death Statistics</li>
+            <li>Good vs. Evil</li>
+          </ul>
+        </div>
+    </div>
+
+  </section>
+
+
+  <section id="superhero-attributes">
+    <div id="attributes">
+      <hr>
+      <div id="section">Superhero Attributes </div>
+      <hr>
+    <div>
+      The main part of being a superhero requires having the talent to hold your own against the many supervillains that plague our world. But how would you know what is powerful enough? One of the ways is to compare your scores with that of other superheroes. We can look into the Avengers by judging their superhero attributes - Intelligence, Strength, Speed, Durability, Power, and Combat. These attributes indicate to us where the strengths of each Avenger lie, and which Avengers are stronger than others overall based on these characteristics. Do you have what it takes to be a superhero?
+    </div>
+  
+  <div>This first chart on the left allows us to see each of the characters, and lets us investigate each attribute separately, as well as a total that enables us to see the overall "Top" Avenger based on these characteristics. On the right we have a chart that compares a selected character with the average value for the attribute selected on the left, allowing us to get a better idea of how that specific character measures up to the others. </div>
+    <div class="container" style="display: flex; padding-top:30px;">
+      <div style="width: 70%;">
+        <div id="observablehq-viewof-which_data-2eec7996"></div>
+        <div id="observablehq-chart-2eec7996"></div>
+      </div>
+      <div style="flex-grow: 1;">
+        <div id="observablehq-viewof-hero-2eec7996"></div>
+        <div id="observablehq-avg_chart-2eec7996"></div>
+      </div>
+    </div>
+
+    <div id="observablehq-key-2eec7996"></div>
+    <div id="observablehq-chart_2-2eec7996"></div>
+    <div>The bar chart above displays the same information but in a static manner that combines all the characteristics into one, with each bar representing the Total value, as calculated by addding up each of the attribute, which are denoted by the color key. This allows us to see in one glance without selecting specific attributes or characters what the values are. From this we can see that the Avengers have different strengths and weaknesses, that align with their personalities and superhero powers. Hulk and Thor rank well for strength, but superheroes like Iron Man and Ant-Man take the lead when it comes to intelligence.</div>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/093d92d78927c0e0@316.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "viewof which_data") return new Inspector(document.querySelector("#observablehq-viewof-which_data-2eec7996"));
+  if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-2eec7996"));
+  if (name === "viewof hero") return new Inspector(document.querySelector("#observablehq-viewof-hero-2eec7996"));
+  if (name === "avg_chart") return new Inspector(document.querySelector("#observablehq-avg_chart-2eec7996"));
+  if (name === "key") return new Inspector(document.querySelector("#observablehq-key-2eec7996"));
+  if (name === "chart_2") return new Inspector(document.querySelector("#observablehq-chart_2-2eec7996"));
+  return ["getColor","filtered_data_2","filtered_data"].includes(name);
+});
+</script>
+  </section>
+
+
+  <section id="physical-features">
+    <!-- Donut Chart -->
+    <hr>
+    <div id="section">Physical Features</div>
+    <hr>
+    <p>
+      To truly embody a Marvel character, fans must understand the key physical features of each character. We have analyzed a relevant set of attributes for this, including gender, eye color, breed, and hair color, weight, and height for each character. This is further broken down into subcategories for each attribute so that we can find how many characters encompass each feature as well as what portion they make up of all the marvel characters. Through this section, we hope to highlight the growing gender, breed, weight, and height diversity among Marvel characters to the Avengers. 
+    </p>
+
+    <!-- drop menu -->
+    <div id="observablehq-viewof-attribute-e69f66f9" style="margin-left: 150px;"></div>
+    <!-- pie chart -->
+    <div id="observablehq-marvelChart-e69f66f9" style="width: 90vw; margin-left: -155px;"></div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/db651047475d33e1@81.js?v=3";
+    new Runtime().module(define, name => {
+      if (name === "viewof attribute") return new Inspector(document.querySelector("#observablehq-viewof-attribute-e69f66f9"));
+      if (name === "marvelChart") return new Inspector(document.querySelector("#observablehq-marvelChart-e69f66f9"));
+    });
+    </script>
+
+    <p>While there is a majority male presence in gender, it is difficult to make any conclusions as the number of women heroes has been increasing over the years according to movie releases that have occurred in the last decade. However, the conclusion can be made based on the pie chart that it seems to be easier to become a Marvel hero as a male than as a female which we infer is a correlated to the physical features weight and height. Males biologically tend to have a greater weight and height than women giving them an advantage which can be seen in the weight and height sections with majority characters having a weight of 101 - 150 pounds and a height of 101 to 150 inches (8.4 feet to 12.5). Breaking down the pie chart further, it can be noted that common eye colors of a marvel character include black, brown and blue eyes. Moreover, while most marvel characters are human, there is a significant number of mutants and Gods as Marvel heroes as well. Lastly, moving on to hair color, most characters seem to have black, brown, blond, or no hair.</p>
+    
+    <a href="https://observablehq.com/d/db651047475d33e1?collection=@riyabaheti/marvel-final-project">Donut Chart Observable</a>
+  
+    <!-- Avenger Percentage Breakdown -->
+    <br><br><p style="float: right; width: 450px; margin-top: 45px;">
+      Comparing specifically the 15 main Marvel superheros, we can see the top physical attributes that primarily make up a hero of great importance in marvel. Of the myriad of features listed, the ones that are encompassed by the Avengers
+      are listed as a percentage of all Avengers. We can notice here that blue, brown, and green are prominent eye colors
+      in the Avengers as well as having a background of humans and mutants increases your qualifications which matches the conclusions made from the previous visual's data aggregation. While not every hair color category is listed from the previous visual, it seems that hair color does not matter as much as there is a vast diversity even among the Avengers. Additionally here, we can see the height and weight of each Avenger to be on average 210 pounds and 126 inches (10.5 feet) on average which makes sense as a strong weight force and height are needed attributes for strength.
+    </p><br>
+    
+    <div id="observablehq-viewof-avengerStats-d99b83a2"></div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/6f5c2bb9b771152d@73.js?v=3";
+    new Runtime().module(define, name => {
+      if (name === "viewof avengerStats") return new Inspector(document.querySelector("#observablehq-viewof-avengerStats-d99b83a2"));
+    });
+    </script>
+    <a href="https://observablehq.com/d/6f5c2bb9b771152d?collection=@riyabaheti/marvel-final-project">Avenger Percentage Breakdown Observable</a>
+  
+    <!-- Search Marvel Characters by Number of Years -->
+    <br><p>
+      While physical appearance is crucial to becoming a marvel superhero, experience and contribution is also very important.
+      Looking at when each marvel character joined versus when each avenger joined as well as the number of appearances they make in the Marvel
+      cinema can tell us how crucial of a role they play. We can tell looking at the two graphs that a character should appear at least 217 times in the movies before they may be considered of great importance. Furthermore, we can see that on average, a character must appear approximately 1,500 times and have been in marvel for at least 30+ years to play a significant role and contribute directly with and to the Avengers.
+    </p><br>
+
+    <div id="observablehq-viewof-characters-b40a43f1"></div>
+    <div id="observablehq-dotplot-b40a43f1" style="width: 800px; margin-left: 100px;"></div>
+    <div id="observablehq-viewof-avengers-b40a43f1"></div>
+    <div id="observablehq-barplot-b40a43f1" style="width: 800px; margin-left: 100px; margin-top: -20px;"></div>
+
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+    <script type="module">
+    import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+    import define from "https://api.observablehq.com/d/a768cd75273fb7f6@151.js?v=3";
+    new Runtime().module(define, name => {
+      if (name === "viewof characters") return new Inspector(document.querySelector("#observablehq-viewof-characters-b40a43f1"));
+      if (name === "dotplot") return new Inspector(document.querySelector("#observablehq-dotplot-b40a43f1"));
+      if (name === "viewof avengers") return new Inspector(document.querySelector("#observablehq-viewof-avengers-b40a43f1"));
+      if (name === "barplot") return new Inspector(document.querySelector("#observablehq-barplot-b40a43f1"));
+    });
+    </script>
+  
+    <a href="https://observablehq.com/d/a768cd75273fb7f6?collection=@riyabaheti/marvel-final-project">Searchable Marvel Years Observable</a>
+  </section>
+
+  <section id="death-statistics">
+    <hr>
+    <div id="section">Death Statistics</div>
+    <hr>
+    <p>Being a superhero isn’t always all fun and games, however. The countless number of battles that happen do take a toll on all the heroes. In some cases, it even claims their life. It’s not always so bleak all the time though– some heroes do tend to come back to life (sometimes repeatedly, if they keep dying). We want you to know the risks of being a superhero.
+<br/>
+The Sankey chart below depicts the flow of the deaths and resurrections that the various Marvel superheroes have had– from the first death to their fifth and from the first return to their fifth. Explore the flows that the superheroes have had, filtered by if they’re currently in the Marvel Cinematic Universe, gender, and even by name.
+<br/>
+Hover over the chart to see a tooltip containing the exact numbers.
+</p>
+<div id="observablehq-viewof-appearances-f27e7a38"></div>
+<div id="observablehq-viewof-search-f27e7a38"></div>
+<div id="observablehq-viewof-radios-f27e7a38"></div>
+<div id="observablehq-viewof-gender-f27e7a38"></div>
+<div id="observablehq-chart2-f27e7a38"></div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/@asuresh/442finalasuresh.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "viewof appearances") return new Inspector(document.querySelector("#observablehq-viewof-appearances-f27e7a38"));
+  if (name === "viewof search") return new Inspector(document.querySelector("#observablehq-viewof-search-f27e7a38"));
+  if (name === "viewof radios") return new Inspector(document.querySelector("#observablehq-viewof-radios-f27e7a38"));
+  if (name === "viewof gender") return new Inspector(document.querySelector("#observablehq-viewof-gender-f27e7a38"));
+  if (name === "chart2") return new Inspector(document.querySelector("#observablehq-chart2-f27e7a38"));
+  return ["filtered","compacted","finalValues","chart","data","types","filteredNodes","filterToContain","finalData","getNextItem","temp","dora","toAdd","num"].includes(name);
+});
+</script>
+  </section>
+
+
+  <section id="good-vs-evil">
+    <hr>
+    <div id="section">Good vs. Evil</div>
+    <hr>
+    <p> The Marvel Cinematic Universe has been defined by legendary battles that feature powerful heroes and villains. At first glance, it often seems impossible that a beloved Avenger might have any weakness compared to the opponent at hand. However, an important question to ask is if good does really triumph over evil (at least on paper). If one is to truly become a successful superhero, it is important to understand how the current Avengers stack up to villains of the past and glean how they themselves might fare in future battles.
+
+The following visualizations compare the total attribute strength between Avengers and villains across three of the most awe-inspiring battles in the MCU, along with providing deeper insight into the villains' individual attributes to see what are the biggest drivers for their formidability.
+</p> <br>
+    <div id="observablehq-viewof-battle-33d8ad9f"></div>
+<div id="observablehq-good_vs_evil_chart-33d8ad9f"></div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/134f76932574aa50.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "viewof battle") return new Inspector(document.querySelector("#observablehq-viewof-battle-33d8ad9f"));
+  if (name === "good_vs_evil_chart") return new Inspector(document.querySelector("#observablehq-good_vs_evil_chart-33d8ad9f"));
+  return ["good_battle_filtered","evil_battle_filtered","final_battle_filtered"].includes(name);
+});
+</script>
+
+  <p> <em>For the above visualization, "Attribute Value" is the sum of the following quantified attributes: Intelligence, Strength, Speed, Durability, Power, and Combat. Each of these values is defined on a scale between 0 and 100. </em><p>
+  <br>
+
+  <div id="observablehq-viewof-villain-33d8ad9f"></div>
+<div id="observablehq-chart-33d8ad9f"></div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@observablehq/inspector@5/dist/inspector.css">
+<script type="module">
+import {Runtime, Inspector} from "https://cdn.jsdelivr.net/npm/@observablehq/runtime@5/dist/runtime.js";
+import define from "https://api.observablehq.com/d/134f76932574aa50.js?v=3";
+new Runtime().module(define, name => {
+  if (name === "viewof villain") return new Inspector(document.querySelector("#observablehq-viewof-villain-33d8ad9f"));
+  if (name === "chart") return new Inspector(document.querySelector("#observablehq-chart-33d8ad9f"));
+  return ["attribute_distributions"].includes(name);
+});
+</script>
+
+  </section>
+</div>
+
+<script src="main.js"></script>

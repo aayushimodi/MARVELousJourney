@@ -1,0 +1,183 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  padding: 64px 32px;
+  font: 16px/1.5 "Verdana";
+  background-color: #a7d5f1;
+  overflow-x: hidden;
+}
+
+.gif{
+  height: 175px;
+  float: left;
+  margin-left: 50px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.site-title {
+  color: maroon;
+  font-family: "Marvel";
+  font-size: 56px;
+  text-align: center;
+}
+
+.member-names {
+  color: black;
+  text-align: center;
+
+}
+
+.side-bar {
+  width: 220px;
+  height: 75vh;
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: left;
+  justify-content: center;
+  font-size: 18px;
+}
+
+nav ul {
+  padding: 0;
+}
+
+nav li {
+  list-style: none;
+}
+
+nav li a {
+  text-decoration: none;
+  color: #333;
+  display: block;
+  padding: 0.6rem 0.3rem;
+  font-weight: bold;
+  transition: all ease-out 250ms;
+  font-family: "Marvel";
+  color: black;
+}
+
+nav li a:hover {
+  color: maroon;
+  font-family: "Marvel";
+}
+
+.main-content {
+  margin-left: 220px;
+  font-family: "Verdana";
+}
+
+section {
+  background-color: white;
+  margin:0;
+  padding:2.5rem 4rem;
+  border-radius: 25px;
+  font-size: 14px;
+}
+
+section:nth-of-type(2n) {
+  background-color: rgb(233, 233, 233);
+}
+
+h1 {
+  color: #444;
+  font-weight: 600;
+}
+
+.active {
+  color: maroon; 
+  font-weight: 600;
+  font-family: "Marvel";
+}
+
+#observablehq-viewof-which_data-2eec7996 {
+  margin-left: 30px;
+  font-size: 14px;
+  width: 400px;
+  text-align: center;
+}
+
+#observablehq-viewof-hero-2eec7996 {
+  font-size: 14px;
+  margin-bottom: 50px;
+  width: 300px;
+}
+
+#observablehq-avg_chart-2eec7996 {
+  margin-left: 100px;
+} 
+
+#question {
+  font-size: 36px;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  color: maroon;
+  font-family: "Marvel";
+}
+
+#section {
+  font-size: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  font-weight: bold;
+  color: darkblue;
+  font-family: "Marvel";
+}
+
+
+/* Pie Chart Style */
+.wrapper {
+  position: relative;
+}
+
+.tooltip {
+  background-color: #fff;
+  box-shadow: 0 6px 8px rgba(52, 73, 94, .2), 0 1px 1px rgba(52, 73, 94, 0.1);
+  font-family: "Work Sans", sans-serif;
+  left: 0;
+  opacity: 0;
+  padding: 0.5em 1em;
+  pointer-events: none;
+  border-radius: 5px;
+  position: absolute;
+  text-align: center;
+  top: -12px;
+  transition: opacity 0.2s linear, transform 0.2s ease-in-out;
+  z-index: 1;
+}
+
+.tooltip:before {
+  background-color: #fff;
+  border-left-color: transparent;
+  border-top-color: transparent;
+  bottom: 0;
+  content: '';
+  height: 12px;
+  left: 50%;
+  position: absolute;
+  transform-origin: center center;
+  transform: translate(-50%, 50%) rotate(45deg);
+  width: 12px;
+  z-index: 1;
+}
+
+.tooltip-name {
+  margin-bottom: 0.2em;
+  font-size: 1em;
+  line-height: 1.4;
+  font-weight: 700;
+}
+
+.tooltip-value {
+  margin-bottom: 0.2em;
+  font-size: 0.8em;
+  line-height: 1.4;
+  font-weight: 400;
+}
